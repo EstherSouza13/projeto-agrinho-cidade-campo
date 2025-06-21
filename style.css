@@ -1,0 +1,246 @@
+/* Fonte Merriweather do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #212121;
+  line-height: 1.6;
+  /* Substitua o caminho abaixo pelo caminho da sua imagem */
+  background-image: url(https://agoravocesabe.com/wp-content/uploads/2024/02/Campo-e-Cidade-na-Educacao-Infantil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;       /* Faz a imagem cobrir toda a tela */
+  background-position: center;  /* Centraliza a imagem */
+  background-attachment: fixed; /* Faz o fundo ficar fixo quando rolar a página */
+}
+
+
+header {
+  background-color: #002c66 ;
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #795548;
+  text-decoration: none;
+  font-size: 28px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon i {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.icon span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.icon:hover {
+  color: #1565C0;
+  transform: scale(1.2);
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section {
+  background-color: rgb(183, 227, 247);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.campo {
+  background-color: rgb;
+}
+
+.cidade {
+  background-color: #bbdefb;
+}
+
+.interdependencia {
+  background-color: rgb(183, 227, 247);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #002c66;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Botão voltar ao topo */
+#btnTopo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #002c66;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+}
+
+#btnTopo:hover {
+  background-color: #2e5d7d;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-icons {
+    gap: 15px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .icon i {
+    font-size: 34px;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+a {
+  color: #1565C0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+.referencia {
+  font-size: 12px;
+  color: #666;
+  margin-top: 15px;
+  font-style: italic;
+  text-align: right;
+}
+
+.referencia a {
+  color: #666;
+  text-decoration: none;
+}
+
+.referencia a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+.imagem-campo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.imagem-campo img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagem-campo img:hover {
+  transform: scale(1.03);
+}
+.imagem-cidade {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.imagem-cidade img {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagem-cidade img:hover {
+  transform: scale(1.03);
+}
+.imagem-interdependencia {
+  display: flex;
+  gap: 20px; /* Espaço entre as imagens */
+  justify-content: center; /* Centraliza as imagens horizontalmente */
+  margin-top: 20px;
+}
+
+.imagem-interdependencia a {
+  flex: 3; /* Faz as imagens ocuparem espaço igual */
+  max-width: 50%; /* Limita o tamanho máximo da imagem */
+  display: block;
+}
+
+.imagem-interdependencia img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Borda arredondada para combinar com o estilo */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.imagem-interdependencia img:hover {
+  transform: scale(1.05); /* Pequeno zoom no hover */
+}
+
+
+
+
